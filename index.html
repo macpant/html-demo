@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900" rel="stylesheet"> 
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style-dash.css">
+</head>
+<body>
+<!-- Wrapper start -->
+<div class="wrapper">
+	<!-- Side-panel start -->
+	<div class="side-panel">
+		<div class="user-pic-detail">
+			<div class="user-pic">
+				<img src="images/user.png" alt="">
+				<ul>
+					<li><a href="javascript:void(0)"> David white</a>
+						<ul>
+							<li><a href="javascript:void(0)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Profile</a></li>
+							<li><a href="javascript:void(0)"><i class="fa fa-power-off"></i> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rest-menu">
+			<ul>
+				<li><a href="javascript:void(0)">Contact manager</a></li>
+				<li><a href="javascript:void(0)">Invited</a></li>
+				<li><a href="javascript:void(0)">History</a></li>
+				<li><a href="javascript:void(0)">Feedback</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- Side-panel end -->
+	<!-- Dashboard-panel start -->
+	<div class="dashboard-panel">
+		<div class="search-bar">
+			<div class="input-search-box">
+				<input type="text" placeholder="Search by Name or Email Address...">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</div>
+		</div>
+		<div class="detail-part">
+			<div class="right-side-button">
+				<a id="open-popup" href="javascript:void(0)">Invites</a>
+			</div>
+			<div class="detail-with-name">
+				<h1>Re/Max Professionals</h1>
+				<p>
+					<span> <i class="fa fa-map-marker"></i> Location</span>
+					<span><a href="javascript:void(0)"> Preview this post</a> </span>
+				</p>
+				<ul>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star"></i></li>
+					<li><i class="fa fa-star-o"></i></li>
+				</ul>
+			</div>
+			<div class="graph-part">
+				<div class="graph">
+					<img src="images/graph-1.png" alt="">					
+				</div>
+				<div class="graph">
+					<img src="images/graph-2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Dashboard-panel end -->
+	<div class="footer">
+		<p>uDistro v2.0</p>
+	</div>
+</div>
+<!-- Wrapper end -->
+<!-- Popup start -->
+<div class="popup-window" id="popup" style="display: none;">
+	<div class="popup">
+		<span class="close-btn" id="close-popup"><i class="fa fa-times"></i></span>
+		<div class="popup-detail">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error facilis vitae, mollitia quod hic. Similique impedit eveniet dolore totam praesentium, animi accusamus eaque aliquid enim ipsam labore a, at quibusdam.</p>
+		</div>
+	</div>
+</div>
+<!-- Popup end -->
+<script src="js/jquery.min.js"></script>	
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#open-popup').click(function(){
+			$('#popup').fadeIn(500);
+		});
+
+		$('#close-popup').click(function(){
+			$('#popup').fadeOut(500);
+		});
+	});
+</script>
+</body>
+</html>

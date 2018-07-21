@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 40px;
+	font-family: 'Lato', sans-serif;
+	font-size: 15px;
+	color: #333;
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;	
+	-webkit-box-sizing: border-box;	
+}
+
+h1, h2, h3, h4, h5, h6, p, span, button, input, textarea, select, ul, li, ol {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+
+.clear-now:before, .clear-now:after {
+	content: "";
+	display: table;
+}
+
+.clear-now:after {
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ============== Wrapper Start */
+
+.wrapper {
+	width: 100%;
+	display: table;
+}
+
+/* ============== Wrapper End */
+
+/* ===============Side panel start */
+.side-panel {
+	display: table-cell;
+	width: 250px;
+	background: #cc9bff;
+}
+
+.user-pic-detail {
+	background: #470c84;
+	text-align: center;
+}
+
+.user-pic {
+	padding: 10px 20px;
+}
+
+.user-pic ul li {
+	display: block;
+	position: relative;
+}
+
+.user-pic ul li a {
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.user-pic ul li ul {
+	display: none;
+	position: absolute;
+	top:auto;
+	left:0;
+	right:0;
+	background: #eee;
+	border-radius: 5px;
+	padding: 10px 0
+}
+
+.user-pic ul li:hover ul {
+	display: block;
+}
+
+.user-pic ul li ul li {
+	padding: 4px 0;
+}
+
+.user-pic ul li ul li a {
+	color: #7020c2;
+	font-size: 13px;
+}
+
+.user-pic ul li ul li a:hover {
+	color: #7020c2;
+	opacity: 0.8;
+}
+
+.user-pic img {
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	background: #fff;
+	overflow: hidden;
+	border: 3px solid #cc9bff;
+	object-fit: cover;
+}
+
+.rest-menu {
+	padding: 0px 2px 2px 2px;
+}
+
+.rest-menu ul li {
+	display: block;
+}
+
+.rest-menu ul li a {
+	display: block;
+	background: #fff;
+	padding: 5px 10px;
+	margin:2px 0;
+	color: #470c84;
+	font-weight: 300;
+}
+
+.rest-menu ul li a:hover {
+	background: #f2f2f2;
+}
+
+/* ===============Side panel end */
+
+/* ===============Dashboard panel start */
+
+.dashboard-panel {
+	display: table-cell;
+	vertical-align: top;
+}
+
+.search-bar {
+	background: #fff6d1;
+	padding: 15px 100px;
+	text-align: center;
+}
+
+.input-search-box {
+	width: 100%;
+	display: table;
+}
+
+.input-search-box input[type="text"], .input-search-box button {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.input-search-box input[type="text"] {
+	width: 90%;
+	height: 40px;
+	border-radius: 5px 0 0px 5px;
+	border:none;
+	background: #fff;
+	color: #333;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.input-search-box button {
+	background: #470c84;
+	border:none; 
+	height: 40px;
+	cursor: pointer;
+	width: 5%;
+	color: #fff;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.detail-part {
+    padding: 10px;
+}
+
+.right-side-button {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.right-side-button a {
+	background: #470c84;
+	padding: 5px 10px;
+	border-radius: 4px;
+	color: #fff;
+	display: inline-block;
+}
+
+.right-side-button a:hover {
+	background: #eee;
+	color: #470c84;
+}
+
+.detail-with-name h1 {
+    font-size: 25px;
+}
+
+.detail-with-name p span {
+	color: #328bb6;
+	font-size: 13px;
+	margin-left: 10px;
+}
+
+.detail-with-name p span:first-child {
+    color: #999;
+    font-size: 13px;
+    margin-left: 0px;
+}
+
+.detail-with-name ul {
+	margin-top:10px;
+}
+
+.detail-with-name ul li {
+	display: inline-block;
+	color: #470c84;
+}
+
+.graph-part {
+	display: table;
+	margin: 10px 0;
+	width: 100%;
+}
+
+.graph {
+	display: table-cell;
+	width: 1%;
+	padding: 15px;
+	background: #eee;
+}
+
+/* ===============Dashboard panel end */
+/* ===============Footer start */
+
+.footer {
+    text-align: center;
+    background: #333;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width:100%;
+}
+
+.footer p {
+	color: #fff;
+	font-size: 14px;
+}
+
+/* ===============Footer end */
+/* ===============popup start */
+
+.popup-window {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background: rgba(0,0,0,0.5);
+}
+
+.popup {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	z-index: 99;
+	background: #fff;
+	padding: 10px;
+}
+
+.close-btn {
+	width:30px;
+	height: 30px;
+	background: #333;
+	color: #fff;
+	display: inline-block;
+	position: absolute;
+	top:-20px;
+	right:-20px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+/* ===============popup end */
